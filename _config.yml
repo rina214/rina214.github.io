@@ -20,7 +20,7 @@ plainwhite:
   # generate social links in footer
   social_links:
     twitter: https://rina214.github.io/
-    github:  github.com/rina214
+    github:  https://github.com/rina214
     linkedIn: https://rina214.github.io/
     rss: rss
     # dribbble: jekyll
