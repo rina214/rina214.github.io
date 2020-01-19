@@ -12,16 +12,16 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
+  name: Rina Kim
+  tagline: Computer Software Engineer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  rina214.github.com
-    linkedIn: in/thelehhman
+    twitter: https://rina214.github.io/
+    github:  github.com/rina214
+    linkedIn: https://rina214.github.io/
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
