@@ -1,4 +1,9 @@
-
+---
+layout: post
+title:  "git 시작하기"
+date:   2020-01-22 21:00
+categories: git linux
+---
 
 ## GIT으로 할 수 있는 일
 
