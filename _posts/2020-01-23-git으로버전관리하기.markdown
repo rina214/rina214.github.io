@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "git으로 버전 관리하기"
+date:   2020-01-23 06:00
+categories: git linux
+---
+
+
+
 ## 깃 저장소 만들기
 
 깃 초기화하기
