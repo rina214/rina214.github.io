@@ -1,4 +1,13 @@
-[\[GIT\] - 02. GIT으로 버전 관리하기](https://rina214.tistory.com/3)
+---
+layout: post
+title:  "git과 branch"
+date:   2020-01-28 23:00
+categories: git linux
+---
+
+git과 branch
+
+[\[GIT\] - 02. GIT으로 버전 관리하기](https://rina214.github.io/git/linux/2020/01/23/git%EC%9C%BC%EB%A1%9C%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.html)
 
 ## 브랜치란?
 
@@ -38,7 +47,6 @@
 
   git log
 
-[##_Image|kage@Z8Smh/btqBBffMM45/IKgIKhGDK3uwgBu3vHTTck/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="498" height="506"|||_##]
 
 06\. work.txt 파일을 두 번 더 커밋해 보겠습니다. work.txt 파일에 'content 2'를 추가한 후 'work 2'라는 메시지와 함께 커밋하고, 또 파일 내용에 'content 3'를 추가한 후 'work 3'라는 메시지와 함께 커밋합니다.
 
@@ -53,8 +61,6 @@
 07\. 커밋이 끝나면 커밋 내역을 확인해 보세요.
 
   git log
-
-[##_Image|kage@Ltpog/btqBxzUkMz5/HPNtddKtLrbNOuFFTABFx0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="565" height="589"|||_##]
 
  master 브랜치가 가장 최신 커밋인 'work 3'를 가리키고 있고, HEAD가 master 브랜치를 가리키고 있습니다. HEAD는 여러 브랜치 중에서 현재 작업 중인 브랜치를 가리킵니다.
 
@@ -90,7 +96,6 @@
 
   git branch
 
-[##_Image|kage@Ruj7A/btqBxz06dX2/yW6UAGESm0ePXskqWwKkP0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="542" height="621"|새 브랜치 만들기||_##]
 
 ### 2\. 브랜치 사이 이동하기
 
@@ -124,7 +129,6 @@
 
  'content 1'에서 'content 3'까지의 내용만 있고 'master content 4'가 없습니다. 이를 통해 google 브랜치가 master 브랜치에서 분기된 이후에 master 브랜치에 추가된 커밋은 google 브랜치에 영향을 미치지 않았단 것을 알 수 있습니다.
 
-[##_Image|kage@b9PxPC/btqBBglt493/3FB53WuViY0SXGYoPZkrf1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="504" height="431"|브랜치 사이 이동하기||_##]
 
 ---
 
@@ -172,7 +176,6 @@
 
 반대로 google 브랜치를 기준으로 master를 비교하면 master 브랜치에만 있는 'master content 4' 커밋을 보여줍니다. 
 
-[##_Image|kage@bK6Cru/btqBzPoCfaI/VGZ5nWthyzs7PTTEwblXdk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="552" height="710"|브랜치 정보 확인하기||_##]
 
 ---
 
@@ -194,9 +197,8 @@
 
   ls -al
 
-02\. 우선 work.txt 파일을 만듭니다. 그리고 o2라는 브랜치를 만듭니다. 현재는 master 브랜치에 있는 상황에서 master.txt라는 파일을 만들고 'master work 2'라는 메시지와 함께 커밋합니다. 이제 o2 브랜치로 체크아웃한 뒤 o2.txt 파일을 만들고 'o2 work 2'라는 메시지와 함께 커밋합니다. 커밋의 상태를 확인해보았을 때 다음과 같이 나오면 잘하신겁니다.
+02\. 우선 work.txt 파일을 만듭니다. 그리고 o2라는 브랜치를 만듭니다. 현재는 master 브랜치에 있는 상황에서 master.txt라는 파일을 만들고 'master work 2'라는 메시지와 함께 커밋합니다. 이제 o2 브랜치로 체크아웃한 뒤 o2.txt 파일을 만들고 'o2 work 2'라는 메시지와 함께 커밋합니다. 그리고 커밋의 상태를 확인해봅니다.
 
-[##_Image|kage@SQ7r7/btqByG6KuC9/Pecj4lg6oHbYRktTfrqbDK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="557" height="809"|||_##]
 
 03\. o2 브랜치에서 작업이 다 끝났다고 가정하고, o2 브랜치의 내용을 master 브랜치로 병합해 보겠습니다. 브랜치를 병합하려면 먼저 master 브랜치로 체크아웃해야 합니다.
 
@@ -216,7 +218,6 @@
 
   git log --oneline --branches --graph
 
-[##_Image|kage@bdKE5A/btqBuQvxfWg/KYcEaObIyL7rggBcxjqcX1/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="435" height="435"|서로 다른 파일 병합하기||_##]
 
 두 브랜치에서 서로 다른 파일을 병합하는 경우 이렇게 깃에서 간단히 해결할 수 있습니다.
 
@@ -280,7 +281,6 @@
 
 06\. cat 명령을 사용해 work.txt 파일을 확인해보세요. master 브랜치의 수정 내용과 o2 브랜치의 수정 내용이 자연스럽게 하나의 파일에 합쳐진 것을 볼 수 있습니다. 이렇게 자동으로 합쳐주는 기능이 있어 깃은 더욱 강력한 도구가 됩니다.
 
-[##_Image|kage@bXv1u9/btqBAEmSJ6n/1W8qXb4ioQh0VK6c9JKKw0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="549" height="827"|같은 문서의 다른 위치를 수정했을 때 병합하기||_##]
 
 ### 3\. 같은 문서의 같은 위치를 수정했을 때 병합하기
 
@@ -328,7 +328,6 @@
 
  이번엔 자동으로 빔이 열리지 않고 메시지가 나타납니다. 이 메시지는 work.txt를 자동 병합하는 동안 충돌(conflict)이 발생했다는 뜻입니다.
 
-[##_Image|kage@nRLS5/btqBBfNFASO/eXz2P70hKErrApWDVB0Bzk/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="577" height="821"|||_##]
 
 05\. 충돌이 생긴 문서는 자동으로 병합될 수 없으므로 사용자가 직접 충돌 부분을 해결한 후 커밋해야 합니다.
 
@@ -342,7 +341,6 @@
 
 08. git log --oneline --branches --graph를 통해 지금까지 만든 브랜치와 커밋의 관계를 확인해 보세요.
 
-[##_Image|kage@baZj59/btqBuvZrg3p/rDEzQkYgNNiebKHCtKY6ik/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="431" height="194"|||_##]
 
 ### 4\. 병합이 끝난 브랜치 삭제하기
 
@@ -360,7 +358,6 @@
 
   git branch -d o2
 
-[##_Image|kage@bflqMg/btqBuQCjhUE/nfs53TFWJy1xaVzq8ex4UK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="369" height="130"|브랜치 삭제하기||_##]
 
 ---
 
@@ -368,7 +365,7 @@
 
 ### 1\. 브랜치에서 checkout과 reset의 작동 원리
 
-[02장](https://rina214.tistory.com/3)에서 이미 checkout 명령과 reset 명령을 공부했습니다. 하지만 브랜치와 함께라면 더 다양하게 사용할 수 있습니다.
+[02장](https://rina214.github.io/git/linux/2020/01/23/git%EC%9C%BC%EB%A1%9C%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.html)에서 이미 checkout 명령과 reset 명령을 공부했습니다. 하지만 브랜치와 함께라면 더 다양하게 사용할 수 있습니다.
 
 01\. test라는 깃 저장소를 만들고, test 디렉터리로 이동합니다.
 
@@ -420,7 +417,7 @@
 
  이제 HEAD는 sub 브랜치를 가리키고 sub는 s1 커밋을 가리키고 있습니다.
 
-08\. [02장](https://rina214.tistory.com/3)에서는 reset 명령으로 master 브랜치에 있던 여러 커밋 중 하나를 골라서 되돌아갔습니다. 브랜치가 여러 개일 때는 현재 브랜치가 아닌 다른 브랜치에 있는 커밋을 골라서 최신 커밋으로 지정할 수 있습니다. 예를 들어 sub 브랜치에 있는 상태에서 master 브랜치에 있는 c2 커밋을 sub 브랜치의 최신 커밋으로 지정해보겠습니다. 먼저 c2커밋의 커밋 해시를 확인합니다.
+08\. [02장](https://rina214.github.io/git/linux/2020/01/23/git%EC%9C%BC%EB%A1%9C%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.html)에서는 reset 명령으로 master 브랜치에 있던 여러 커밋 중 하나를 골라서 되돌아갔습니다. 브랜치가 여러 개일 때는 현재 브랜치가 아닌 다른 브랜치에 있는 커밋을 골라서 최신 커밋으로 지정할 수 있습니다. 예를 들어 sub 브랜치에 있는 상태에서 master 브랜치에 있는 c2 커밋을 sub 브랜치의 최신 커밋으로 지정해보겠습니다. 먼저 c2커밋의 커밋 해시를 확인합니다.
 
   git log --oneline --branches
 
@@ -434,7 +431,6 @@
 
  git reset 명령을 사용하면 HEAD가 가리키고 있는 브랜치의 최신 커밋을 원하는 커밋으로 지정할 수 있습니다. 이때 어떤 브랜치에 있는 커밋이든 지정할 수 있으며, 명령을 수행한 뒤 브랜치와 연결이 끊긴 커밋은 삭제됩니다.
 
-[##_Image|kage@bgkx5C/btqByFtjYor/8e92v6O07ZlMwyrErcQiYK/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="541" height="751"|||_##]
 
 ### 2\. 수정 중인 파일 감추기 및 되돌리기
 
@@ -488,4 +484,3 @@
 
 git stash pop
 
-[##_Image|kage@bb2rCn/btqBxAyXv59/KO8N1ZWxC1wEIMw74Kw1v0/img.png|alignCenter|data-origin-width="0" data-origin-height="0" width="551" height="648"|git stash||_##]
