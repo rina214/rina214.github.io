@@ -7,7 +7,6 @@ categories: git linux
 
 git과 branch
 
-[\[GIT\] - 02. GIT으로 버전 관리하기](https://rina214.github.io/git/linux/2020/01/23/git%EC%9C%BC%EB%A1%9C%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.html)
 
 ## 브랜치란?
 
@@ -365,7 +364,7 @@ git과 branch
 
 ### 1\. 브랜치에서 checkout과 reset의 작동 원리
 
-[02장](https://rina214.github.io/git/linux/2020/01/23/git%EC%9C%BC%EB%A1%9C%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.html)에서 이미 checkout 명령과 reset 명령을 공부했습니다. 하지만 브랜치와 함께라면 더 다양하게 사용할 수 있습니다.
+[git으로 버전 관리하기](https://rina214.github.io/git/linux/2020/01/23/git%EC%9C%BC%EB%A1%9C%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.html)에서 이미 checkout 명령과 reset 명령을 공부했습니다. 하지만 브랜치와 함께라면 더 다양하게 사용할 수 있습니다.
 
 01\. test라는 깃 저장소를 만들고, test 디렉터리로 이동합니다.
 
@@ -417,7 +416,7 @@ git과 branch
 
  이제 HEAD는 sub 브랜치를 가리키고 sub는 s1 커밋을 가리키고 있습니다.
 
-08\. [02장](https://rina214.github.io/git/linux/2020/01/23/git%EC%9C%BC%EB%A1%9C%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.html)에서는 reset 명령으로 master 브랜치에 있던 여러 커밋 중 하나를 골라서 되돌아갔습니다. 브랜치가 여러 개일 때는 현재 브랜치가 아닌 다른 브랜치에 있는 커밋을 골라서 최신 커밋으로 지정할 수 있습니다. 예를 들어 sub 브랜치에 있는 상태에서 master 브랜치에 있는 c2 커밋을 sub 브랜치의 최신 커밋으로 지정해보겠습니다. 먼저 c2커밋의 커밋 해시를 확인합니다.
+08\. [git으로 버전 관리하기](https://rina214.github.io/git/linux/2020/01/23/git%EC%9C%BC%EB%A1%9C%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0.html)에서는 reset 명령으로 master 브랜치에 있던 여러 커밋 중 하나를 골라서 되돌아갔습니다. 브랜치가 여러 개일 때는 현재 브랜치가 아닌 다른 브랜치에 있는 커밋을 골라서 최신 커밋으로 지정할 수 있습니다. 예를 들어 sub 브랜치에 있는 상태에서 master 브랜치에 있는 c2 커밋을 sub 브랜치의 최신 커밋으로 지정해보겠습니다. 먼저 c2커밋의 커밋 해시를 확인합니다.
 
   git log --oneline --branches
 
